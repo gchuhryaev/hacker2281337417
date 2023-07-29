@@ -1,0 +1,104 @@
+*, :before, :after {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+body {
+	background: url("img/bg.png");
+	background-size: cover;
+	font-family: sans-serif;
+}
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #1f1f1f;
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+.login .title {
+	line-height: 44px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: #bfbfbf;
+    background: linear-gradient(0deg, #000, #262626);
+    box-shadow: inset 0px 1px 1px #fff4;
+    border-bottom: 1px solid #fff1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.login .fields {
+	display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background: #141414;
+    border-bottom: 1px solid #fff5;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 3px #000;
+}
+.login .fields > * {
+	outline: 0 none;
+	padding: 10px;
+	color: #7d7d7d;
+	background: #0000;
+	border: 0 none;
+	border-top: 1px solid #fff2;
+	border-bottom: 1px solid #0006;
+}
+.login .fields > :first-child {
+	border-top: 0 none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.login .fields > :last-child {
+	border-bottom: 0 none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.login .fields .username {
+	background: url("img/username.png") no-repeat 10px center;
+	padding-left: 34px;
+}
+.login .fields .password {
+	background: url("img/password.png") no-repeat 10px center;
+	padding-left: 34px;
+}
+.login .additionals {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	margin: 0 30px;
+}
+.login .additionals > * {
+	color: #666;
+	text-decoration: none;
+}
+.login .additionals .remember {
+	margin-right: 20px;
+}
+.login .additionals .remember span {
+	position: relative;
+	top: -3px;
+}
+.login .submit {
+	display: block;
+	cursor: pointer;
+	outline: 0 none;
+	border: 0 none;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: inherit;
+	line-height: 40px;
+	width: calc(100% - 60px);
+	margin: 20px auto;
+	background: #329d90;
+	color: #fff;
+	text-shadow: 0 -1px 1px #0005;
+}
